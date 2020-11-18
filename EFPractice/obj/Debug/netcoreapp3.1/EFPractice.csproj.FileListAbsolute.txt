@@ -60,7 +60,7 @@ C:\Users\hp\source\repos\EFPractice\EFPractice\bin\Debug\netcoreapp3.1\runtimes\
 C:\Users\hp\source\repos\EFPractice\EFPractice\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\hp\source\repos\EFPractice\EFPractice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\hp\source\repos\EFPractice\EFPractice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\hp\source\repos\EFPractice\EFPractice\obj\Debug\netcoreapp3.1\EFPractice.csprojAssemblyReference.cache
 C:\Users\hp\source\repos\EFPractice\EFPractice\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\hp\source\repos\EFPractice\EFPractice\obj\Debug\netcoreapp3.1\EFPractice.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\EFPractice\EFPractice\obj\Debug\netcoreapp3.1\EFPractice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\source\repos\EFPractice\EFPractice\obj\Debug\netcoreapp3.1\EFPractice.csprojAssemblyReference.cache
