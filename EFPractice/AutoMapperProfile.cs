@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using EFPractice.Dtos;
+using EFPractice.Dtos.Weapon;
 using EFPractice.Models;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace EFPractice
             CreateMap<Character, GetCharacterDto>();
             CreateMap<AddCharacterDto, Character>();
             CreateMap<UpdateCharacterDto, Character>();
+            CreateMap<AddWeaponDto, Weapon>();
            
         }
     }
