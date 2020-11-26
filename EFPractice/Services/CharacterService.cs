@@ -59,6 +59,8 @@ namespace EFPractice.Services
         {
             ServiceResponse<GetCharacterDto> serviceresponse = new ServiceResponse<GetCharacterDto>();
             Character dbcharacter = await _context.Characters
+                        .Include(c => c.weapon)
+                        .Include(c => c.CharacterSkills).ThenInclude(cs => cs.Skill)
                         .FirstOrDefaultAsync(x => x.Id == id && x.User.Id == GetUserId());
             
             if (dbcharacter == null)

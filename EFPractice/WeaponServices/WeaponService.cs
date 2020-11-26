@@ -19,7 +19,7 @@ namespace EFPractice.WeaponServices
         private readonly IMapper _mapper;
         private readonly DataContext _context;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        public WeaponService(DataContext context, IMapper mapper, HttpContextAccessor httpContextAccessor)
+        public WeaponService(DataContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
             _mapper = mapper;
@@ -47,7 +47,6 @@ namespace EFPractice.WeaponServices
                 await _context.SaveChangesAsync();
 
                 //return response
-                response.Success = true;
                 response.Message = "Successfully added";
                 response.Data = _mapper.Map<GetCharacterDto>(character);
 

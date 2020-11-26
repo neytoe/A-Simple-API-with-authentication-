@@ -1,4 +1,6 @@
-﻿using EFPractice.Models;
+﻿using EFPractice.Dtos.Skill;
+using EFPractice.Dtos.Weapon;
+using EFPractice.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,8 @@ namespace EFPractice.Dtos
         public int Defense { get; set; } = 10;
         public int Intelligence { get; set; } = 10;
         public RpgClass Class { get; set; } = RpgClass.Knight;
+        public GetWeaponDto Weapon { get; set; }
+        public List<GetSkillDto> Skills { get; set; }
     }
 
 }

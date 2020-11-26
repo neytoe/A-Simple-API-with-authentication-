@@ -18,5 +18,7 @@ namespace EFPractice.Models
 
         public Weapon weapon { get; set; }
 
+        public List<CharacterSkill> CharacterSkills { get; set; }
+
     }
 }
