@@ -15,10 +15,14 @@ namespace EFPractice.Models
         public int Intelligence { get; set; } = 10;
         public RpgClass Class { get; set; } = RpgClass.Knight;
         public User User { get; set; }
+        public int UserId { get; set; }
 
         public Weapon weapon { get; set; }
 
         public List<CharacterSkill> CharacterSkills { get; set; }
+        public int Fights { get; set; }
+        public int Victories { get; set; }
+        public int Defeats { get; set; }
 
     }
 }

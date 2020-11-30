@@ -7,6 +7,7 @@ using AutoMapper;
 using EFPractice.Data;
 using EFPractice.Services;
 using EFPractice.Services.CharacterSkillService;
+using EFPractice.Services.FightService;
 using EFPractice.WeaponServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -37,7 +38,7 @@ namespace EFPractice
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped<ICharacterService, CharacterService>();
@@ -59,6 +60,7 @@ namespace EFPractice
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IWeaponService, WeaponService>();
             services.AddScoped<ICharacterSkillService, CharacterSkillService>();
+            services.AddScoped<IFightServices, FightServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
